@@ -1,0 +1,11 @@
+.main {
+  color: #6A5ACD; 
+  width: fit-content;
+  height: fit-content;
+}
+
+.imgs {
+    width: fit-content;
+    height: 10px;
+    border-radius: 15px;
+}
