@@ -1,15 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector("form");
     const resultado = document.getElementById("resultado-coctel");
+    const btnAleatorio = document.getElementById("btn-aleatorio");
 
     // Cargar carrito desde localStorage o inicializar vacío
     let carrito = JSON.parse(localStorage.getItem("carritoCocteles")) || [];
 
-    form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        const input = form.elements["coctel"].value;
-        const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${encodeURIComponent(input)}`;
-        resultado.innerHTML = "Buscando...";
+    btnAleatorio.addEventListener("click", async () => {
+        const url = `https://www.thecocktaildb.com/api/json/v1/1/random.php`;
+        resultado.innerHTML = "Buscando cóctel aleatorio...";
 
         try {
             const res = await fetch(url);
