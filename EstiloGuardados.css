@@ -1,0 +1,32 @@
+.main{
+  color: #6A5ACD; 
+  width: fit-content;
+  height: fit-content;
+}
+
+.lista-guardados {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: blueviolet;
+  background-color: limegreen;
+}
+
+.detalle-coctel {
+  color: darkviolet;
+  background-color: limegreen;
+  padding: 10px;
+  border-radius: 5px;
+}
+.cerrar-detalle {
+  color: darkviolet;
+  background-color: limegreen;
+  padding: 5px;
+  border-radius: 5px;
+}
+.contenido-detalle{
+  color: darkviolet;
+  background-color: limegreen;
+  padding: 5px;
+  border-radius: 5px;
+}
