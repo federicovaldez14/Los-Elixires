@@ -1,11 +1,108 @@
-.main {
-  color: #6A5ACD; 
-  width: fit-content;
-  height: fit-content;
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #2c1a1a, #996515);
+  color: #f4f4f4;
 }
 
-.imgs {
-    width: fit-content;
-    height: 10px;
-    border-radius: 15px;
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #000;
+  color: #f8f8f8;
+  padding: 20px 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Cinzel Decorative', serif;
+  letter-spacing: 2px;
+  color: #f5d76e; 
+}
+
+header img {
+  height: 60px;
+  border-radius: 12px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5d76e;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: rgba(245, 215, 110, 0.2);
+  color: #fff;
+}
+
+
+form {
+  margin: 40px auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+form input[type="text"] {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  width: 280px;
+  font-size: 1rem;
+  outline: none;
+}
+
+form button {
+  padding: 12px 25px;
+  background: #f5d76e;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+form button:hover {
+  background: #d4af37;
+  transform: scale(1.05);
+}
+
+
+#resultado-coctel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+#resultado-coctel .coctel {
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#resultado-coctel .coctel:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+#resultado-coctel img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
