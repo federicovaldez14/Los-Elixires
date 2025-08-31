@@ -83,26 +83,99 @@ form button:hover {
 }
 
 
+#aleatorio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#btn-aleatorio {
+  padding: 16px 40px;
+  background: linear-gradient(90deg, #f5d76e 60%, #996515 100%);
+  color: #2c1a1a;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
+  margin-bottom: 30px;
+}
+
+#btn-aleatorio:hover {
+  background: linear-gradient(90deg, #d4af37 60%, #996515 100%);
+  transform: scale(1.05);
+  color: #fff;
+}
+
 #resultado-coctel {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
   padding: 20px;
-}
-
-#resultado-coctel .coctel {
-  background: rgba(0,0,0,0.6);
-  padding: 15px;
-  border-radius: 12px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  color: #f4f4f4;
   text-align: center;
+  font-size: 1.1rem;
 }
 
-#resultado-coctel .coctel:hover {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+#resultado-coctel h2 {
+  color: #f5d76e;
+  font-family: 'Cinzel Decorative', serif;
+  margin-bottom: 12px;
 }
 
 #resultado-coctel img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 18px auto;
+  width: 220px;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(245,215,110,0.15);
+}
+
+#resultado-coctel ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 18px 0;
+}
+
+#resultado-coctel ul li {
+  background: rgba(245,215,110,0.08);
+  margin: 4px 0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: #f5d76e;
+  font-weight: 500;
+}
+
+#resultado-coctel p {
+  margin: 8px 0;
+}
+
+#resultado-coctel .guardar {
+  margin-top: 18px;
+  padding: 10px 28px;
+  background: #f5d76e;
+  color: #2c1a1a;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.2s, color 0.2s;
+}
+
+#resultado-coctel .guardar:hover {
+  background: #d4af37;
+  color: #fff;
 }

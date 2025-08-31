@@ -44,13 +44,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
 
                     contenidoDetalle.innerHTML = `
-                        <h2>${coctel.strDrink}</h2>
-                        <img src="${coctel.strDrinkThumb}" alt="${coctel.strDrink}" width="200">
-                        <p><strong>ID:</strong> ${coctel.idDrink}</p>
-                        <p><strong>Categoría:</strong> ${coctel.strCategory}</p>
-                        <p><strong>Ingredientes:</strong></p>
-                        <ul>${ingredientes}</ul>
-                        <p><strong>Instrucciones:</strong> ${coctel.strInstructions}</p>
+                        <div id="resultado-coctel">
+                            <h2>${coctel.strDrink}</h2>
+                            <img src="${coctel.strDrinkThumb}" alt="${coctel.strDrink}">
+                            <p><strong>ID:</strong> ${coctel.idDrink}</p>
+                            <p><strong>Categoría:</strong> ${coctel.strCategory}</p>
+                            <p><strong>Ingredientes:</strong></p>
+                            <ul>${ingredientes}</ul>
+                            <p><strong>Instrucciones:</strong></p>
+                            <p style="background:rgba(245,215,110,0.08);padding:10px;border-radius:8px;">${coctel.strInstructions}</p>
+                        </div>
                     `;
                 } else {
                     contenidoDetalle.innerHTML = "No se encontró el cóctel.";

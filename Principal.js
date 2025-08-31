@@ -27,12 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 resultado.innerHTML = `
                     <h2>${coctel.strDrink}</h2>
-                    <img src="${coctel.strDrinkThumb}" alt="${coctel.strDrink}" width="200">
+                    <img src="${coctel.strDrinkThumb}" alt="${coctel.strDrink}">
                     <p><strong>ID:</strong> ${coctel.idDrink}</p>
                     <p><strong>Categoría:</strong> ${coctel.strCategory}</p>
                     <p><strong>Ingredientes:</strong></p>
                     <ul>${ingredientes}</ul>
-                    <p><strong>Instrucciones:</strong> ${coctel.strInstructions}</p>
+                    <p><strong>Instrucciones:</strong></p>
+                    <p style="background:rgba(245,215,110,0.08);padding:10px;border-radius:8px;">${coctel.strInstructions}</p>
                     <button class="guardar" data-id="${coctel.idDrink}" data-nombre="${coctel.strDrink}">Guardar</button>
                 `;
 
